@@ -1,0 +1,3 @@
+module WebProject {
+	requires org.seleniumhq.selenium.api;
+}

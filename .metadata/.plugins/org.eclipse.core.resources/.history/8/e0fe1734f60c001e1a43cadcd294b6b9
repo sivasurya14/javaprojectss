@@ -1,0 +1,28 @@
+package stringQuestions;
+
+public class RemoveDuplicateNumber {
+	public static void main(String[] args) {
+		String number = "1,2,3,1,2,3";
+		int val=0;
+		int val1=0;
+		int temp=0;
+
+		String[] numberr = number.split(",");
+
+		for (int i = 0; i <= numberr.length; i++) {
+			for(int j=i+1; j<=numberr.length;j++) {
+			String no = numberr[i];
+			String no1 = numberr[j];
+		      val = Integer.parseInt(no);
+		      val1 = Integer.parseInt(no);
+		      if(val<val1) {
+		    	  
+		      }
+          
+			System.out.println(numberr[i]);
+		}
+
+	}
+
+	}
+}

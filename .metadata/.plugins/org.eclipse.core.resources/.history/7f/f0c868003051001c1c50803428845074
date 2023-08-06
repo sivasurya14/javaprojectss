@@ -1,0 +1,17 @@
+package overriding;
+
+class Car extends Bike {
+
+	void display() {
+		super.display();
+		System.out.println("my favourite movie is vaagai sooda va ");
+
+	}
+
+	public static void main(String[] args) {
+		Car g = new Car();
+		g.display();
+		
+
+	}
+}

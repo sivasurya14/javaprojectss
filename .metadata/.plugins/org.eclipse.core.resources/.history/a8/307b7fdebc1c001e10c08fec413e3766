@@ -1,0 +1,13 @@
+package day4Program;
+
+public class DemoClass {
+	public static void main(String[] args) {
+		int a = 23;
+		System.out.println(a / 10);
+		System.out.println(a % 10);
+		
+		String c ="1";
+		System.out.println(String.valueOf(c));
+	
+	}
+}

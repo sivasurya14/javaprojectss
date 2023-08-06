@@ -1,0 +1,38 @@
+package cooldrinksProject;
+
+import java.util.Scanner;
+
+public class CoolDrinks {
+	
+	static int coke=25;
+ static	int peppsi=35;
+static	int soda=45;
+
+void coke(int scan) {
+	
+	System.out.println("enter the amount ");
+	
+}
+
+	
+	public static void main(String[] args) {
+		
+		Scanner scan =new Scanner(System.in);
+		
+		System.out.println("enter what you want coke is 25RS | peppsi is 35RS |soda is 45RS");
+		System.out.println("this machine only accept 5,10,20,100");
+		
+		System.out.print("press 1 for coke|press 2 for peppsi|press 3 for soda  enter here >>>");
+		
+		int sc1=scan.nextInt();
+		
+		   CoolDrinks co = new CoolDrinks();
+		   if(sc1==1) {
+		   co.coke(sc1);
+		   }
+				
+			}}
+			
+			
+			
+	

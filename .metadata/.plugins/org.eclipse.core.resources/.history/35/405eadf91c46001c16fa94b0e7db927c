@@ -1,0 +1,20 @@
+package testprogramss;
+
+public class TestString2 {
+	public static void main (String []args) {
+		String str = "siva";
+		
+		int sr =str.length();
+		if(sr%2==0) {
+			
+			System.out.println("hii");
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}

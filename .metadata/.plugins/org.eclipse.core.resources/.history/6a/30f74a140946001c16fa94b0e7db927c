@@ -1,0 +1,49 @@
+package testprogramss;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Test5 {
+
+	public static boolean isPrime(int c) {
+		boolean isPrime = true;
+		for (int i = 2; i < c / 2; i++) {
+			if (c % i== 0) {
+				isPrime = false;
+				break;
+			}
+		}
+		return isPrime;
+
+	}
+
+	public static void main(String[] args) {
+
+		String b = "23,24,25,26";
+		List<String> al = new ArrayList<>();
+		al = Arrays.asList(b.split(","));
+		List<Integer> num = new ArrayList<>();
+		for (String sd : al) {
+
+			int number = Integer.parseInt(sd);
+			num.add(number);
+		}
+		for (int i = 0; i < num.size(); i++) {
+			int c = num.get(i);
+			if (Test5.isPrime(c)) {
+				System.out.print(c + "-PRIME");
+				if (i == num.size() - 1) {
+					break;
+
+				}
+				System.out.print(",");
+			} else {
+				System.out.print(c + "-NOT PRIME");
+				System.out.print(",");
+			}
+		}
+
+	}
+
+}

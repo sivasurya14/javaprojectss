@@ -1,0 +1,21 @@
+package testprogramss;
+
+public class ContainsMethod {
+	public static void main(String[] args) {
+		String ab= "6";
+	int sd=Integer.parseInt(ab);
+	
+	boolean isSquare=false;
+	
+	for(int i=2 ;i<sd;i++) {
+		
+		if(i*i==sd) {
+			
+			
+		}
+		
+	}
+
+
+}
+}

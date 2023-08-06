@@ -1,0 +1,19 @@
+package testprogramss;
+
+
+
+public class CheckPrime {
+	public static void main(String[] args) {
+		String a = args[0];
+		int al =Integer.parseInt(a);
+		
+		int sum = 0;
+		for (int i = 2; i < al; i++) {
+			
+			System.out.println(i);
+			
+		}
+				}
+	}
+
+

@@ -1,0 +1,25 @@
+package day3class;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ConcurrentHashEx {
+public static void main(String[] args) {
+	
+	Map<Integer, String> map= new HashMap<>();
+	
+	
+	map.put(1, "laptop");
+	map.put(2, "mobile");
+	map.put(3, "mouse");
+	
+	
+	for(String x : map.values()) {
+	
+	  System.out.println(x);
+	  
+	  map.put(4, "ball");
+	  
+	}	  
+}
+}

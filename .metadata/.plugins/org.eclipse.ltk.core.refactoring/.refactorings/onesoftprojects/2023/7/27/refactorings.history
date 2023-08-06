@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;Details&apos; in &apos;projects.UseEmpTest.main(...)&apos; to &apos;details&apos;&#x0D;&#x0A;- Original project: &apos;onesoftprojects&apos;&#x0D;&#x0A;- Original element: &apos;projects.UseEmpTest.main(String[]).Details&apos;&#x0D;&#x0A;- Renamed element: &apos;Details&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;Details&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;projects{UseEmpTest.java[UseEmpTest~main~\[QString;@Details!695!742!715!721!QArrayList\&lt;QEmployee;&gt;;!0!false" name="details" references="true" stamp="1688357662285" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package dayFourClass;
+
+public class PassWordException extends Exception{
+
+	public PassWordException(String mesage) {
+		super();
+	}
+	 
+}

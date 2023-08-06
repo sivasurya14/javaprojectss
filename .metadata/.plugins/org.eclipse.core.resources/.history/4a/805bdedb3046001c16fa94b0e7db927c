@@ -1,0 +1,20 @@
+package testprogramss;
+
+public class TestString2 {
+	public static void main (String []args) {
+		String str= "sivaa";
+		
+		int n =str.length();
+		if(n%2==0) {
+			System.out.println(str.substring(0,2)+"-"+str.substring(2));
+		}
+			
+			else if(n%2==1) {
+				System.out.println(str.substring(0,2)+"-"+str.substring(2,3));
+				
+			}
+			
+			}
+		}
+
+

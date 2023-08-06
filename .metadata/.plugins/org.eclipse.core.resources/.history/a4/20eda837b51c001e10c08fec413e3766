@@ -1,0 +1,11 @@
+package day4Program;
+
+public class CombineTwoString {
+	public static void main(String[] args) {
+		String name1 = "JAVASas";
+		String name2 = "developer";
+		
+		System.out.println();
+
+	}
+}

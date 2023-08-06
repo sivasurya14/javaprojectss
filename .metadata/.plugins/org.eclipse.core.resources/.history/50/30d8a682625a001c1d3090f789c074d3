@@ -1,0 +1,74 @@
+package cooldrinksProject;
+
+import java.util.Scanner;
+
+public class CoolDrinks {
+	
+	static int coke=25;
+ static	int peppsi=35;
+static	int soda=45;
+
+void coke(int scan) {
+
+	if(sc1==1) {
+		
+		System.out.println("enter the amount");
+		
+		int sc2=scan.nextInt();
+		
+	if(sc2<=25) {
+			
+			System.out.println(sc2+" is insufficient amount enter amount ");
+			
+			int sc3=scan.nextInt();
+			
+			int a=sc3+sc2;
+			
+			if(a<=25) {
+				
+				System.out.println(a+" is insufficient amount enter amount");
+				int sc4=scan.nextInt();
+				
+				int b=a+sc4;
+				
+				if(b<=25) {
+				
+				System.out.println(b+" is insufficient amount enter the amount ");
+				
+                 int sc5=scan.nextInt();
+				
+				int c=b+sc4;
+				if(c<=25) {
+				System.out.println(c+" is insufficient amount enter the amount ");
+				
+                int sc6=scan.nextInt();
+				
+				int d=c+sc4;
+				if(d<=25) {
+				System.out.println(d+" is insufficient amount enter the amount ");
+				
+				
+				
+			}
+
+
+
+	
+	public static void main(String[] args) {
+		
+		Scanner scan =new Scanner(System.in);
+		
+		System.out.println("enter what you want coke is 25RS | peppsi is 35RS |soda is 45RS");
+		System.out.println("this machine only accept 5,10,20,100");
+		
+		System.out.println("press 1 for coke|press 2 for peppsi|press 3 for soda ");
+		
+		int sc1=scan.nextInt();
+		
+		
+				
+			}}}}}}
+			
+			
+			
+	

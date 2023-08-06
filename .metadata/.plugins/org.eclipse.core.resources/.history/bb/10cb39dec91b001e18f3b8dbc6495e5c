@@ -1,0 +1,11 @@
+package dayFourClass;
+
+public class UseLogin {
+	
+	public static void main(String[] args) throws PassWordException, Exception {	
+		Login c = new Login();
+		c.login("sivas");
+		
+	}
+
+}

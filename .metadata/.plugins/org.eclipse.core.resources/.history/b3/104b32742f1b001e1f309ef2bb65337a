@@ -1,0 +1,28 @@
+package day3class;
+
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class CopyOnArraylist {
+	  public static void main(String[] args)
+	    {
+	        CopyOnWriteArrayList<Integer> ArrLis1
+	            = new CopyOnWriteArrayList<Integer>();
+	  
+
+	        CopyOnWriteArrayList<String> list
+            = new CopyOnWriteArrayList<String>();
+  
+      
+        list.add("geeks");
+        list.add("gfg");
+         list.add("programming");
+  
+
+        System.out.println("CopyOnWriteArrayList: "
+                           + list);
+  
+        ArrLis1.remove(0);
+     
+        System.out.println(list);
+}
+}

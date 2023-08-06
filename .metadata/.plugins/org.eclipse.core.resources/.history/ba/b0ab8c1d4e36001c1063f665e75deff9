@@ -1,0 +1,16 @@
+package overriding;
+
+ class Car extends Bike {
+
+	void display() {
+		
+		System.out.println("my favourite colour is blue");
+		
+	}
+	public static void main (String []args) {
+		Car g=new Car();
+		Bike b =new Bike();
+		g.display();
+		b.display();
+	}
+}

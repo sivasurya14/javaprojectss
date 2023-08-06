@@ -1,0 +1,59 @@
+package streamapiexample;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class StreamEx {
+	public static void main(String[] args) {
+
+		HashSet<String> names = new HashSet<>();
+		names.add("siva");
+		names.add("ezhil");
+		names.add("mainmaran");
+		names.add("arunkumar");
+		names.add("dhinesh");
+		names.add("gurubaaran");
+		names.add("anusuya");
+		names.add("davitha");
+		System.out.println();
+		System.out.println("####### NORMAL ITERATION WITHOUT STREAM");
+		System.out.println(names);		
+		System.out.println();
+		System.out.println("########## PROGRAM TO SORTING THE LIST###########");
+          List<String> sorted  = names.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		System.out.println(sorted);
+		System.out.println();
+		System.out.println("########## PROGRAM TO SORTING THE LIST IN NATURAL ORDER");
+		List<String> sorted1  = names.stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList());
+		System.out.println(sorted1);
+		System.out.println();
+		System.out.println("####### TO FIND "+ "A" +" ALPHABET NAMES");
+		List<String>part =names.stream().filter(x->x.contains("d")).collect(Collectors.toList());
+		System.out.println(part);
+			
+		ArrayList<Integer> num = new ArrayList<>();
+		num.add(10);
+		num.add(11);
+		num.add(12);
+		num.add(13);
+		int val = Collections.max(num);
+		System.out.println();
+		System.out.println("#### TO FIND MAXIMUM VALUE OF INTEGER");
+		System.out.println(val);
+		ArrayList<String> names1 = new ArrayList<String>(names);
+		System.out.println();
+		System.out.println(names1);
+
+		// to print reverse order
+		// Collections.reverse(names1);
+		// System.out.println(names1);
+		Collections.sort(names1);
+		System.out.println(names1);
+              
+	}
+}

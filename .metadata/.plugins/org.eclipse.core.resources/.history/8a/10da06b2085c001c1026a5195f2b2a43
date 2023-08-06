@@ -1,0 +1,21 @@
+package testprogramss;
+
+public class StringtoFLoat {
+	public static void main(String[] args) {
+		
+		
+		float value = 2.33f;
+		String d =Float.toString(value);
+		String de =d.replaceAll("."," ");
+		
+		System.out.println(de);
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+}

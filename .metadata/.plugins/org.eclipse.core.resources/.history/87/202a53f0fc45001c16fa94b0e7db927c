@@ -1,0 +1,11 @@
+package testprogramss;
+
+public class ContainsMethodEx {
+	public static void main(String[] args) {
+		String b="car";
+		
+		System.out.println(b.contains("a,b,c,d,e,f,g,h,i,j,l,k,l,m,n,o,p,q,r"));
+		
+		
+	}
+}

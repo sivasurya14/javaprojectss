@@ -1,0 +1,13 @@
+package hieraricalInheritance;
+
+
+class WildAnimals{  
+public static void main(String args[]){  
+Lion c=new Lion() ;  
+c.eat();
+c.sleep();
+c.bark();
+//c.sleep();
+ 
+}}  
+

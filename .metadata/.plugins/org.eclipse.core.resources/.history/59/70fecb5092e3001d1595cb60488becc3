@@ -1,0 +1,22 @@
+package TestSelenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class EdgeLaunchDemo {
+	
+	public static void main(String[] args) {
+		
+		WebDriver driver ;
+		
+		System.setProperty("webdriver.edge.driver", "C:\\edgedriver_win64 (1)");
+		
+		driver = new EdgeDriver();
+		
+		driver.get("http://javatpoint.com");
+		driver.quit();
+		
+		
+	}
+
+}

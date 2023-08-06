@@ -1,0 +1,19 @@
+package day1program;
+
+public class RemoveDuplicateElements {
+	public static void main(String[] args) {
+
+		String value = "onesofttechnologies";
+
+
+		System.out.println("With Duplicate Elelments : " + value);
+
+		String withoutDuplicate = "" + value.charAt(0);
+		for (int i = 1; i < value.length(); i++) {
+			if (!withoutDuplicate.contains(String.valueOf(value.charAt(i)))) {
+				withoutDuplicate = withoutDuplicate + value.charAt(i);
+			}
+		}
+		System.out.println("WithOut Duplicate Elements :" + withoutDuplicate);
+	}
+}

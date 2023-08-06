@@ -1,0 +1,41 @@
+package streamapiexample;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StudentRFilter {
+	public static void main(String[] args) {
+
+		ArrayList<StudentRecord> record = new ArrayList<>();
+		record.add(new StudentRecord(251, "siva", "bsc", 55));
+		record.add(new StudentRecord(252, "davitha", "bsc", 100));
+		record.add(new StudentRecord(253, "anusuya", "bsc", 70));
+		record.add(new StudentRecord(254, "suresh", "bsc", 100));
+		record.add(new StudentRecord(255, "dhinesh", "bsc", 99));
+		record.add(new StudentRecord(256, "viji", "bsc", 60));
+		record.add(new StudentRecord(257, "gaythri", "bsc", 10));
+
+		
+		List<StudentRecord> sorted1  =record.stream().filter(x->x.percentage>50).toList();
+		
+		System.out.println(sorted1);
+		
+		
+		List<StudentRecord>sorted2=record.stream().sorted((o1 ,o2)->(int) (o1.percentage- o2.percentage )).collect(Collectors.toList());
+		
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+

@@ -1,0 +1,13 @@
+package oneSofttest5;
+
+public class ForLoopEx {
+
+	public static void main(String[] args) {
+		
+		String name = "sivasuriyans";
+		
+		int size = name.length();
+		System.out.println(size);
+
+}
+}

@@ -1,0 +1,33 @@
+package stringQuestions;
+
+public class StringIntoCalculation {
+	
+	public static void main(String[] args) {
+		
+		String value ="2-1";
+		int sub =0;
+		int add=0;
+		int temp=0;
+		for(int i =0; i<value.length(); i++) {
+			for(int j=i+1; j<value.length(); j++) {
+				char ch =value.charAt(i);
+				char ch1=value.charAt(j);
+				
+				if(ch1=='-') { 	
+					System.out.println(ch+"printing..."+value.charAt(++j));
+					sub=ch-(value.charAt(i));
+				System.out.println(sub);
+				}
+				if(ch1=='+') {
+					
+					add =ch+ch1++;
+				System.out.println(add);
+			}
+			
+			
+			}	
+		}
+		//System.out.println();
+	}
+
+}

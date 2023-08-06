@@ -1,0 +1,24 @@
+package optionClassExamples;
+
+import java.util.Optional;
+
+public class OptionalExample {
+
+	public static void main(String[] args) {
+
+		String str[] = new String[10];
+
+		System.out.println(str[5]);
+
+		Optional<String> checkNullable = Optional.ofNullable(str[5]);
+
+		if (checkNullable.isPresent()) {
+
+			System.out.println("it contains null value ");
+
+		} else 
+	       
+			System.out.println("it doesn't contain null value ");
+
+	}
+}

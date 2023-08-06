@@ -1,0 +1,27 @@
+package agecalculator;
+
+import java.util.Date;
+import java.util.Scanner;
+
+public class AgeCalculator {
+	public static void main(String[] args) {
+
+		Date date = new Date();
+
+		int currentDate = date.getDate();
+
+		System.out.println(currentDate);
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter your date of birth to calculate your age :");   
+	
+		
+		int age =currentDate-datet;
+		
+		System.out.println("your age is "+age);
+		
+		
+		
+		
+	}
+
+}

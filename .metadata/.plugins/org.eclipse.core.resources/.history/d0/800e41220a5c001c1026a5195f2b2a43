@@ -1,0 +1,23 @@
+package testprogramss;
+
+public class StringtoFLoat {
+	public static void main(String[] args) {
+		
+		
+//		float value = 2.3f;
+		String name = "2.3.3.0";
+//		String d =Float.toString(value);
+//		String de =d.replace(".","");
+		String name1=name.replace(".","");
+		
+//		System.out.println(de);
+		System.out.println(name1);
+		
+		
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,38 @@
+package testprogramss;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CheckPrime {
+	public static void main(String[] args) {
+		String a = args[0];
+		List<String> no= new ArrayList<>();
+		no=Arrays.asList(a.split(","));
+		List<Integer> al = new ArrayList<>();
+		for(String sd:no) {
+			int number=Integer.parseInt(sd);
+			al.add(number);
+			
+		}
+		int sum=0;
+	for( int i=0 ; i<al.size();i++) {
+		sum = al.get(i) % 2;
+		if (al.get(i) <= 0 && al.get(i)== 1) {
+			System.out.println("invalid");
+		} else if (sum == 0 ||al.get(i)== 1) {
+			System.out.println(a + " is not prime ");
+	}
+
+		else
+			System.out.println(a + "  is prime ");}
+}
+
+		
+		
+		
+	}
+		
+	
+
+		

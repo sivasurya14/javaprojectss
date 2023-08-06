@@ -1,0 +1,12 @@
+package stringQuestions;
+
+public class StringToInt {
+	public static void main(String[] args) {
+
+		String number = "2-1+3";
+
+		int val = Integer.parseInt(number);
+
+		System.out.println(val);
+	}
+}

@@ -1,0 +1,11 @@
+package testprogramss;
+
+public class ContainsMethodEx {
+	public static void main(String[] args) {
+		String b="car";
+		
+		System.out.println(b.substring());
+		
+		
+	}
+}

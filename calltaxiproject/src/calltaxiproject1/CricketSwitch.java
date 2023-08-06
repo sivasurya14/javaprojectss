@@ -1,0 +1,31 @@
+package calltaxiproject1;
+
+import java.util.Scanner;
+
+public class CricketSwitch {
+
+public static void main(String[] args) {
+	Scanner balls=new Scanner(System.in);
+	
+	int sc1 =1;
+	
+	while(true) {
+		System.out.println("hii");
+		System.out.println("hghgj");
+	}
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+}

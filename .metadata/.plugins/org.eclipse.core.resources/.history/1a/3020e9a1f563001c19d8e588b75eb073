@@ -1,0 +1,46 @@
+package streamapiexample;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StudentRFilter {
+	public static void main(String[] args) {
+
+		ArrayList<StudentRecord> record = new ArrayList<>();
+		record.add(new StudentRecord(251, "siva", "bsc", 55));
+		record.add(new StudentRecord(252, "davitha", "bsc", 100));
+		record.add(new StudentRecord(253, "anusuya", "bsc", 70));
+		record.add(new StudentRecord(254, "suresh", "bsc", 100));
+		record.add(new StudentRecord(255, "dhinesh", "bsc", 99));
+		record.add(new StudentRecord(256, "viji", "bsc", 60));
+		record.add(new StudentRecord(257, "gaythri", "bsc", 10));
+
+		System.out.println();
+		System.out.println("###### FILTERING THE VALUES THAT MORE THAN 50 PERCENTAGE #######");
+		List<StudentRecord> sorted1 = record.stream().filter(x -> x.getPercentage() > 50).toList();
+		System.out.println(sorted1);
+
+		System.out.println();
+		System.out.println("######### SORTING THE VALUES WITH COMPARING PERCENTAGE #############");
+		List<StudentRecord> sorted2 = record.stream()
+				.sorted((o1, o2) -> (int) (o1.getPercentage() - o2.getPercentage())).collect(Collectors.toList());
+		System.out.println(sorted2);
+
+		System.out.println();
+		System.out.println("######## SORTING THE VALUES IN REVERSE ORDER USING PERCENTAGE#########");
+		List<StudentRecord> sorted3 = record.stream()
+				.sorted(Comparator.comparingLong(StudentRecord::getPercentage).reversed()).collect(Collectors.toList());
+
+		System.out.println(sorted3);
+		System.out.println();
+		System.out.println("############ FILTER THE RECORD WITH PARTICULAR VALUES ");
+		List<StudentRecord> sorted4 = record.stream().filter(x -> x.getName().startsWith("d"))
+				.collect(Collectors.toList());
+		System.out.println(sorted4);
+
+	}
+
+}

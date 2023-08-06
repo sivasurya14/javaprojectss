@@ -1,0 +1,12 @@
+package testprogramss;
+
+public class ContainsMethod {
+	public static void main(String[] args) {
+		
+	
+	String ab= "xyz";
+	
+
+System.out.println(ab.contains("x"));
+}
+}

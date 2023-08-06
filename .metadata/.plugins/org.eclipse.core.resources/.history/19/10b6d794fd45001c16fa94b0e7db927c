@@ -1,0 +1,34 @@
+package testprogramss;
+
+public class ContainsMethod {
+	public static void main(String[] args) {
+		String ab= "";
+		if(ab.contains(ab)) {
+			System.out.println(" invalid");
+		}
+		else {
+		
+	int sd=Integer.parseInt(ab);
+	
+	boolean isSquare=false;
+	
+	for(int i=2 ;i<sd;i++) {
+		
+		if(i*i==sd) {
+		isSquare=true;
+		break;	
+		}
+	}
+		if(isSquare) {
+			System.out.println("square");
+		}
+			else {
+				System.out.println("not square");
+				}
+			}
+	}
+		
+}
+
+
+

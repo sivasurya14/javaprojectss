@@ -1,0 +1,23 @@
+package colllectionTest;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HashSetEx { 
+		 public static void main(String args[]){  
+		  //Creating HashSet and adding elements  
+		    HashSet<Integer> set=new HashSet();  
+		           set.add(22);    
+		           set.add(21);    
+		           set.add(25);   
+		           set.add(33);  
+		           set.add(35);  
+		           Iterator<Integer> i=set.iterator();  
+		           while(i.hasNext())  
+		           {  
+		           System.out.println(i.next());  
+		           }  
+		 }  
+		}  
+
+

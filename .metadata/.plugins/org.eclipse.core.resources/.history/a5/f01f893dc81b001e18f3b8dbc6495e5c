@@ -1,0 +1,21 @@
+package dayFourClass;
+
+public class Login {
+	
+	public void login(String password) throws PassWordException,Exception{
+		try {
+		if(password.length()>8) {		
+			System.out.println("Sucessfully loged in..");
+		}else {			
+			throw new PassWordException("Must contain more than 8 character : ");
+		}
+		}catch(PassWordException e) {
+			
+			throw new PassWordException("Must contain more than 8 character : ");
+		}
+		
+			
+		
+	}
+
+}

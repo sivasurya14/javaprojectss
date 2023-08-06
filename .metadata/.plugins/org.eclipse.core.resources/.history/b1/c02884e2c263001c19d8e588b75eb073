@@ -1,0 +1,22 @@
+package streamapiexample;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class StreamEx {
+	public static void main(String[] args) {
+
+		HashSet<String> names = new HashSet<>();
+		names.add("siva");
+		names.add("ezhil");
+		names.add("arunpraksh");
+		names.add("mainmaran");
+
+		
+		System.out.println(names);
+		ArrayList<String> names1 = new ArrayList<String>(names);
+		System.out.println(names1);
+
+	}
+	
+}

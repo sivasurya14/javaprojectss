@@ -1,0 +1,19 @@
+package testprogramss;
+
+public class TestStringToArray {
+	
+	public static void main(String[] args) {
+	String a="siva";
+//		StringBuffer l1=new StringBuffer(a);
+//		System.out.println(l1.reverse());
+	int length=a.length();
+		String reverse = null ;
+		for(int i=length-1;i>=0;i--) {
+			
+			reverse=reverse+a.charAt(i);
+			
+		
+	}
+		System.out.print(reverse);
+}
+}

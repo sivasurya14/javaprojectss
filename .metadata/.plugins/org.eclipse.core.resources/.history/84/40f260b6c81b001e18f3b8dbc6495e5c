@@ -1,0 +1,14 @@
+package dayFourClass;
+
+public class PassWordException extends Exception{
+
+	public PassWordException(String mesage) {
+		super(mesage);
+			
+	}
+	@Override
+	 public void printStackTrace() {		 
+		System.out.println("musttt Contain more than 8 Character: ");
+	 }
+	
+}

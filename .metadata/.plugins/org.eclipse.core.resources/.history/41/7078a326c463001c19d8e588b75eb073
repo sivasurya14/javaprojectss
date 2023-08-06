@@ -1,0 +1,28 @@
+package streamapiexample;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+
+public class StreamEx {
+	public static void main(String[] args) {
+
+		HashSet<String> names = new HashSet<>();
+		names.add("siva");
+		names.add("ezhil");
+		names.add("mainmaran");
+		names.add("mainmaran");		
+		System.out.println(names);
+		ArrayList<Integer> num = new ArrayList<>();
+		num.add(10);
+		num.add(11);
+		num.add(12);
+		num.add(13);
+		Collections.max(num);
+		System.out.println(num);
+		ArrayList<String> names1 = new ArrayList<String>(names);
+		System.out.println(names1);
+      Collections.max(names1);
+      System.out.println(names1);
+	}	
+}

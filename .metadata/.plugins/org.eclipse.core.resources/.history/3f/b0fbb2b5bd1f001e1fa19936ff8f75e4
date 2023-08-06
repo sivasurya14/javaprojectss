@@ -1,0 +1,40 @@
+package streamApiexample;
+
+public class CarDetails {
+
+	int id;
+	String brand;
+	String price;
+	
+	
+	
+	
+	public CarDetails(int id, String brand, String price) {
+		super();
+		this.id = id;
+		this.brand = brand;
+		this.price = price;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+
+	
+	
+}

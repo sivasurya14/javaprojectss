@@ -1,0 +1,18 @@
+package day4Program;
+
+public class FindPrefix2 {
+	public static void main(String[] args) {
+		String name[] = { "siva", "sivaprakash", "sivasurya", "sivasami" };
+
+		int[] a= new int [name.length];
+		String val;
+		for (int i = 0; i < name.length; i++) {
+             
+			val=name[i];
+		  System.out.println(val);
+			
+		}
+
+	}
+
+}

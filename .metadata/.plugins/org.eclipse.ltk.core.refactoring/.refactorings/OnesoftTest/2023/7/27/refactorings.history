@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;currentNumber&apos; in &apos;stringQuestions.StringINTONoCalculation.main(...)&apos; to &apos;currentNo&apos;&#x0D;&#x0A;- Original project: &apos;OnesoftTest&apos;&#x0D;&#x0A;- Original element: &apos;stringQuestions.StringINTONoCalculation.main(String[]).currentNumber&apos;&#x0D;&#x0A;- Renamed element: &apos;currentNumber&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;currentNumber&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;stringQuestions{StringINTONoCalculation.java[StringINTONoCalculation~main~\[QString;@currentNumber!159!180!163!175!I!0!false" name="currentNo" references="true" stamp="1688661468172" version="1.0"/>
+</session>

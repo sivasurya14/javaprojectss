@@ -1,0 +1,11 @@
+package testprogramss;
+
+public class ContainsMethodEx {
+	public static void main(String[] args) {
+		String b="abcdefghijklmnopqrs";
+		
+		System.out.println(b.contains("car"));
+		
+		
+	}
+}

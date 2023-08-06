@@ -1,0 +1,4 @@
+module WebProject {
+	requires org.seleniumhq.selenium.api;
+	requires org.seleniumhq.selenium.edge_driver;
+}

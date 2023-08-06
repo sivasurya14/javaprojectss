@@ -1,0 +1,19 @@
+package streamapiexample;
+
+public class StudentRecord {
+	int id;
+  String name;
+	String degree;
+	int percentage;
+	public StudentRecord(int id, String name, String degree, int percentage) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.degree = degree;
+		this.percentage = percentage;	
+	}
+	@Override
+	public String toString() {
+		return "StudentRecord [id=" + id + ", name=" + name + ", degree=" + degree + ", percentage=" + percentage + "]";
+	}
+}

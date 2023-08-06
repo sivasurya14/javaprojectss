@@ -1,0 +1,49 @@
+package day3class;
+
+import java.util.Hashtable;
+
+public class UseStudents {
+
+	public static void main(String[] args) {
+
+		Hashtable<Integer, Student> list = new Hashtable<>(5);
+        Student  s = new Student();
+        
+        
+//		list.put(s.getRollno(), new Student(101, "siva", 201, 21));
+//		list.put(s.getRollno(), new Student(102, "dinesh", 202, 22));
+//		list.put(s.getRollno(), new Student(103, "davitha", 203, 23));
+//		list.put(s.getRollno(), new Student(104, "anu", 204, 24));
+//		list.put(s.getRollno(), new Student(105, "viji", 205, 25));
+
+        Student s1=  new Student(101, "siva", 201, 21);
+	    Student s2 =new Student(102, "siva", 202, 23);
+	 
+//	Student s3=new Student(103, "balu", 201, 22);
+//    Student s4=new Student(104, "anu", 204, 24);
+//    Student s5=new Student(105, "viji", 205, 25);
+
+
+    list.put(s1.getRollno(), s1);
+    list.put(s2.getRollno(), s2);
+//  list.put(s3.getRollno(), s3);
+//  list.put(s4.getRollno(), s4);
+//  list.put(s5.getRollno(), s5);
+    
+    
+	
+    System.out.println(s1.hashCode());
+	System.out.println(s2.hashCode());	
+	System.out.println(s1.equals(s2));
+		
+	
+	
+		list.forEach((k, v) ->
+
+		System.out.println(k + " " + v+" "+k.hashCode()%5)
+
+		);
+
+	}
+
+}

@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Student1  {
+public static void main(String[] args) {
+	
+	ArrayList<Student>al=new ArrayList<>();
+	al.add(new Student(3,"cat","be"));
+	al.add(new Student(4,"arun","ece"));
+	al.add(new Student(1,"baskar","arts"));
+	al.add(new Student(2,"dog","msc"));
+	
+	
+	
+	System.out.println("comparable");
+	Collections.sort(al);
+	al.forEach(x->System.out.println(x));
+
+ System.out.println("###### COMPARE BY NAME###### "); 
+	Collections.sort(al,new CompareByDepart());
+	al.forEach(x->System.out.println(x));
+   System.out.println("*****copmpare by name****** ");
+   System.out.println();
+	Collections.sort(al,new CompareByName());
+	al.forEach(x->System.out.println(x));
+	
+
+	 System.out.println("###### COMPARE BY Id###### "); 
+		Collections.sort(al,new CompareById());
+		al.forEach(x->System.out.println(x));
+
+}
+	
+}

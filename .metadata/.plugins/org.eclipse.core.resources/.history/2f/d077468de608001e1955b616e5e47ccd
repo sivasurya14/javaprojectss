@@ -1,0 +1,130 @@
+package projects;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class UseEmp {
+	
+	public static void main(String[] args) {
+		
+		  Employee e1 = new Employee("gobi", 24, 190000, "developer", 'm', 1144);
+		  Employee e2 = new Employee("ajith", 23, 40000, "developer", 'm', 1574);
+		  Employee e3 = new Employee("pradeep", 22, 30000, "testing", 'm', 1454);
+		  Employee e4 = new Employee("rajesh", 25, 100000, "racer", 'm', 1234);
+		  Employee e5 = new Employee("moni", 27, 20000, "actor", 'f', 1166);
+		  Employee e6 = new Employee("moni", 26, 500000, "designer", 'f', 1155);
+
+		  ArrayList<Employee> employees = new ArrayList<>();
+		  employees.add(e1);
+		  employees.add(e2);
+		  employees.add(e3);
+		  employees.add(e4);
+		  employees.add(e5);
+		  employees.add(e6);
+		
+		  //filter Methods
+		  System.out.println("\n");
+		  System.out.println("Print employee details which is start with G");
+		  List<Employee>l1=employees.stream().filter(x->x.getName().startsWith("g")).collect(Collectors.toList());
+		  l1.forEach(y->System.out.println(y));
+		  
+		  //map
+		    List<String>map1=employees.stream().map(x->x.getRole()).collect(Collectors.toList());
+		    map1.forEach(a->System.out.println(a));
+		  
+		  //  List<String> map2 = employees.stream().map(x -> x.getName().startsWith("g")).collect(Collectors.toList());
+		  // distinct//
+		  List<String>l2=employees.stream().map(x->x.getRole()).distinct().toList();
+          l2.forEach(y->System.out.println(y));
+
+		  // sorted Descending order
+          System.out.println("Descending order for salary :");
+		  List<Integer>l3=employees.stream().map(x -> x.getSalary()).sorted(Comparator.reverseOrder()).limit(5).toList();
+		  l3.forEach(y -> System.out.println(y));
+		  
+		  //sorted Ascending order
+		  System.out.println("List of salary for Employees :");
+		  List<Integer>l7=employees.stream().map(x -> x.getSalary()).sorted().toList();
+		  List<String> name =employees.stream().map(x->x.getName()).sorted().toList(); 
+		 
+		  l7.forEach(y -> System.out.println(y));
+
+		  // limit//
+		  List<String>l4=employees.stream().map(x->x.getName()).limit(3).toList();
+		  l4.forEach(y->System.out.println(y));
+
+		  // anyMatch//
+		  boolean l5=employees.stream().map(x->x.getName()).anyMatch((s) -> s.startsWith("m"));
+		  System.out.println(l5);
+		  
+		  //count//
+		  List<String>l6=employees.stream().map(x->x.getName()).filter(y->!y.endsWith("a")).collect(Collectors.toList());
+		  l6.forEach(a->System.out.println(a));
+		  long end2=l6.stream().count();
+		  System.out.println(end2);
+		  
+		  //maximum
+		  Employee max=employees.stream().max(Comparator.comparingInt(Employee::getSalary)).get();
+		  System.out.println(max);
+
+		  //minmum
+		   
+		  Employee min=employees.stream().min(Comparator.comparingInt(Employee::getSalary)).get();
+		   System.out.println(min);
+
+		  //Second max
+		   System.out.println("second maximum salary of employee : ");
+		    Employee secmax=employees.stream().sorted(Comparator.comparingInt(Employee::getSalary).reversed()).skip(1).findFirst().get();
+		    System.out.println(secmax.getSalary());
+
+		  //Second min
+		   System.out.println("second minimum salary of employee : ");
+		  Employee secmin=employees.stream().sorted(Comparator.comparingInt(Employee::getSalary)).skip(1).findFirst().get();
+		  System.out.println("second minimum: "+ secmin.getSalary());
+		  
+		  //findfirst
+		  Optional<Employee> findfirst= employees.stream().findFirst();
+		  System.out.println(findfirst.get());
+		  
+		  //findany
+		System.out.println("Using find any method");
+		Optional<Employee> findany= employees.stream().findAny();
+	    System.out.println(findany.get());
+		  
+		  //flatmap
+		//List<Employee>flatmap=employees.stream().flatMap(num -> Stream.of(num)).collect(Collectors.toList());
+	    //flatmap.forEach(System.out::println);
+	// Anymatch 
+	  System.out.println("Using Starts With method ");
+	List<String> startswithName =employees.stream().map(x->x.getName()).filter(y->!y.endsWith("a")).collect(Collectors.toList());
+	System.out.println(startswithName);
+	    
+	//endswith count
+	
+   System.out.println("ends with count ");
+   long  endswithCount =employees.stream().filter(a->a.getName().endsWith("p")).count();
+   System.out.println(endswithCount);
+   //nameswithoutDuplicate values 
+   System.out.println("Names without Duplicate value");
+   List<String> nameswithoutDup= employees.stream().map(x->x.getName()).distinct().toList();
+   System.out.println(nameswithoutDup);
+   
+   // sec minimum value 
+   
+     
+     List<Integer> top3salary =employees.stream().map(x->x.getSalary()).sorted().toList();
+     top3salary.forEach(x->System.out.println(x));
+  
+   
+   System.out.println("\n");
+   System.out.println("top 3 lowest salary");
+	  List<Employee> top3LowestSalary=employees.stream().sorted(Comparator.comparingInt(Employee::getSalary)).limit(3).collect(Collectors.toList());
+      top3LowestSalary.forEach(x-> System.out.println(x));
+	  
+	}
+
+}

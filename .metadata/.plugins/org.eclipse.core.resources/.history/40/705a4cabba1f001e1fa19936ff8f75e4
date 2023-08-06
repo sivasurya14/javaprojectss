@@ -1,0 +1,19 @@
+package dayFiveClass;
+
+public class UseLamdaEx {
+	public static void main(String[] args) {
+		
+		
+		LamdaExample  lam = new LamdaExample() {
+			
+			public int add(int a, int b) {
+				
+				return a+b;
+				
+			}
+		};
+		
+		System.out.println(lam.add(10, 10));
+	}
+
+}

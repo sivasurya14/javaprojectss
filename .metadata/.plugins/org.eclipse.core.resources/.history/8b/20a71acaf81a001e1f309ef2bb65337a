@@ -1,0 +1,44 @@
+package stringQuestions;
+
+public class RemoveSpaceandDPCharacter {
+	public static void main(String[] args) {
+
+		String value = "i am working as a developer";
+		int count = 1;
+		String newValue = value.replaceAll("\s", "");
+		System.out.println(newValue);
+		String withoutDuplicate = "" + value.charAt(0);
+		for (int i = 1; i < newValue.length(); i++) {
+			if (!withoutDuplicate.contains(String.valueOf(newValue.charAt(i))))
+				withoutDuplicate = withoutDuplicate + newValue.charAt(i);
+			
+		}
+		for (int j = 0; j < withoutDuplicate.length(); j++) {
+			System.out.println(withoutDuplicate.charAt(j) + ":" + count);
+		}
+		int duplicatecopunt=0;
+		String duplicateValue="";
+		for(int i=0;i<newValue.length();i++) {
+			duplicateValue=""+newValue.charAt(0);
+			if(duplicateValue.contains(String.valueOf(newValue.charAt(i+1)))){
+				duplicateValue=""+newValue.charAt(i);
+				
+						
+			}
+		}
+		
+		System.out.println(duplicateValue);
+	}
+	
+}
+
+//		for (int i = 0; i <= newValue.length() - 1; i++) {
+//			for (int j = i + 1; j <= newValue.length() - 1; j++) {
+//				char ch = newValue.charAt(i);
+//				char ch1 = newValue.charAt(j); 
+//				if (ch!=ch1) {
+//					withoutDuplicate =""+ch1;
+//				}
+//			}
+//			
+//		}

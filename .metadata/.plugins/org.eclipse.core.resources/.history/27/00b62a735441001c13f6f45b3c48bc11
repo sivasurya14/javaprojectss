@@ -1,0 +1,12 @@
+package java8features;
+
+public interface DefaultMethod {
+	
+	public String say(String msg);
+	
+	public default void sayable() {
+		
+		System.out.println("this deafult method");
+	}
+
+}

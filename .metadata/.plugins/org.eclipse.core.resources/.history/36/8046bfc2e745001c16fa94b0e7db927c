@@ -1,0 +1,21 @@
+package testprogramss;
+
+public class CheckPrime {
+	public static void main(String[] args) {
+	int a=1;
+	int sum=0;
+	
+	sum=a%2;
+	if(a<=0) {
+		System.out.println("invalid");
+	}
+	else if (sum==0) {
+		
+		System.out.println(a+" is not prime ");
+	}
+	
+	else
+		System.out.println(a+"  is prime ");
+	  
+	}
+}

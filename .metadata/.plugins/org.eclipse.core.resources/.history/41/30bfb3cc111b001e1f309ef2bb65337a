@@ -1,0 +1,28 @@
+package day3class;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayToList {
+
+	public static void main(String[] args) {
+
+		String name[] = { "siva", "guru", "mani" };
+
+		
+		int a [] = {1,2,3,4,5};
+		
+		List<int[]> list2= Arrays.asList(a);
+		
+		System.out.println(list2);
+		List<String> list = Arrays.asList(name);
+
+		System.out.println("Converting array into list : " + list);
+
+		Object[] name1 = list.toArray();
+
+		System.out.println("Converting List into array : " + Arrays.toString(name1));
+
+	}
+
+}

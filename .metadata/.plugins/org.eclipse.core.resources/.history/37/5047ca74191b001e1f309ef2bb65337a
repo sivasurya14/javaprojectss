@@ -1,0 +1,19 @@
+package day3class;
+
+public class Student {
+
+	
+	private int id;
+	private String name;
+	private int rollno;
+	private int age;
+	
+	public Student(int id, String name, int rollno, int age) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.rollno = rollno;
+		this.age = age;
+	}
+	
+}
